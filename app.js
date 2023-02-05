@@ -33,7 +33,7 @@ video.forEach(vid => {
 	})
 })
 
-const main = () => {
+const main = async () => {
 	loadingPage.style.display = 'none'
 	landingPage.style.display = 'flex'
 
@@ -48,6 +48,10 @@ const main = () => {
 	}
 
 	let clickableState = { clicks: 0, scale: 0.5, drop: false }
+	setTimeout(() => {
+		console.log(drop)
+		clickableState.drop = true
+	}, 25500)
 	const handleClickAnimation = e => {
 		if (clickableState.clicks === 0) musik.play()
 		if (clickableState.drop) switchPage()
@@ -60,7 +64,6 @@ const main = () => {
 		oSound.load()
 		oSound.play()
 	}
-	addEventListener('load', () => setTimeout(() => (clickableState.drop = true), 500))
 
 	let isBonusShown = false
 	const switchBonus = () => {
