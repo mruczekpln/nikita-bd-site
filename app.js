@@ -49,8 +49,8 @@ const main = async () => {
 
 	let clickableState = { clicks: 0, scale: 0.5, drop: false }
 	setTimeout(() => {
-		console.log(drop)
 		clickableState.drop = true
+		console.log('drop')
 	}, 25500)
 	const handleClickAnimation = e => {
 		if (clickableState.clicks === 0) musik.play()

@@ -38,7 +38,7 @@ body {
 
 	display: block;
 
-	transition: height 300ms ease-in-out;
+	transition: scale 300ms ease-in-out;
 
 	object-fit: contain;
 }
