@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+body {
+	width: 100dvw;
+	width: 100vw;
+
+	height: 100dvh;
+	height: 100vh;
+
+	font-family: 'Kanit', sans-serif;
+}
+
+.landing {
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background-color: antiquewhite;
+}
+
+.clickable {
+	height: 200px;
+	aspect-ratio: 2 / 1;
+
+	display: block;
+
+	transition: height 300ms ease-in-out;
+
+	object-fit: contain;
+}
+
+.bonus-image {
+	position: absolute;
+	bottom: -2000px;
+	right: 0;
+}
+
+.bonus {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+	display: none;
+
+	background-image: url('./src/confetti.gif');
+	background-color: burlywood;
+}
+
+.greetings {
+	font-size: 3rem;
+}
+
+.main .media {
+	width: 100%;
+	height: 60%;
+
+	display: grid;
+	grid-template-columns: 200px 200px;
+	grid-template-rows: 50% 50%;
+	gap: 1rem;
+}
+
+img,
+video {
+	width: 100%;
+	height: 100%;
+
+	object-fit: contain;
+}
