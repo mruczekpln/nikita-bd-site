@@ -25,9 +25,15 @@ loading
 			<header class="greetings">wszystkiego najlepszego!</header>
 			<div class="media">
 				<img src="./src/nikita1.jpg" alt="sraka" />
-				<video width="250" src="./src/nikita2.mp4" loop preload></video>
+				<video width="250"  loop preload="metadata">
+					<source src="./src/nikita2.mp4#t=0.001" type="video/mp4">
+					video tag
+				</video>
 				<img src="./src/nikita3.jpg" alt="sraka" />
-				<video width="250" src="./src/nikita4.mp4" loop preload></video>
+				<video width="250"  loop preload="metadata">
+					<source src="./src/nikita4.mp4#t=0.001" type="video/mp4">
+					video tag
+				</video>
 			</div>
 		</section>
 	</body>
