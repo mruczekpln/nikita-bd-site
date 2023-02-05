@@ -24,7 +24,7 @@ const loaded = []
 
 video.forEach(vid => {
 	vid.load()
-	vid.addEventListener('loadeddata', () => {
+	vid.addEventListener('canplaythrough', () => {
 		console.log('loaded')
 		loaded.push(vid)
 		console.log(loaded)
