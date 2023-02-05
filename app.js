@@ -19,7 +19,7 @@ const switchPage = async () => {
 }
 
 let clickableState = { clicks: 0, scale: 0.5, drop: false }
-addEventListener('load', () => setTimeout(() => (clickableState.drop = true), 25500))
+addEventListener('load', () => setTimeout(() => (clickableState.drop = true), 500))
 
 const handleClickAnimation = e => {
 	if (clickableState.clicks === 0) musik.play()
